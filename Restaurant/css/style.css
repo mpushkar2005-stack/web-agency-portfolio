@@ -4,6 +4,25 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600;700&display=swap');
 
+:root{
+
+    --primary:#C2410C;
+
+    --secondary:#F59E0B;
+
+    --dark:#111827;
+
+    --light:#FFF8F2;
+
+    --text:#1E293B;
+
+    --white:#FFFFFF;
+
+    --shadow:0 10px 30px rgba(0,0,0,.08);
+
+    --radius:12px;
+
+}
 
 /* ===========================
    CSS RESET
@@ -52,5 +71,171 @@ ul{
     width:90%;
     max-width:1200px;
     margin:auto;
+
+}
+
+/* ===========================
+   NAVBAR
+=========================== */
+
+.navbar{
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    padding:20px 0;
+    background:transparent;
+    z-index:1000;
+    transition:0.3s ease;
+}
+
+.nav-container{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    font-size:32px;
+    font-weight:700;
+    font-family:'Playfair Display', serif;
+    color:var(--white);
+}
+
+.logo span{
+    color:var(--secondary);
+}
+
+.nav-links{
+    display:flex;
+    gap:35px;
+}
+
+.nav-links a{
+    color:var(--white);
+    font-weight:500;
+    position:relative;
+}
+
+.nav-links a::after{
+
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:-6px;
+    width:0;
+    height:2px;
+    background:var(--secondary);
+    transition:.3s;
+}
+
+.nav-links a:hover::after{
+
+    width:100%;
+
+}
+
+.btn-book{
+
+    background:var(--primary);
+    color:white;
+    padding:14px 28px;
+    border-radius:50px;
+    font-weight:600;
+    box-shadow:var(--shadow);
+
+}
+
+.btn-book:hover{
+
+    background:var(--secondary);
+    transform:translateY(-3px);
+
+}
+
+.hamburger{
+
+    display:none;
+    cursor:pointer;
+
+}
+
+.hamburger span{
+
+    display:block;
+    width:28px;
+    height:3px;
+    margin:5px;
+    background:white;
+    border-radius:5px;
+
+}
+
+/* ===========================
+   HERO
+=========================== */
+
+.hero{
+
+    min-height:100vh;
+
+    background:
+    linear-gradient(rgba(0,0,0,.55),
+    rgba(0,0,0,.55)),
+    url("../assets/images/hero.jpg");
+
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    align-items:center;
+
+}
+
+.hero-content{
+
+    color:white;
+    max-width:700px;
+
+}
+
+.hero h1{
+
+    font-size:64px;
+    line-height:1.2;
+    margin-bottom:20px;
+    font-family:'Playfair Display', serif;
+
+}
+
+.hero p{
+
+    font-size:20px;
+    margin-bottom:35px;
+    line-height:1.7;
+
+}
+
+.hero-buttons{
+
+    display:flex;
+    gap:20px;
+
+}
+
+.hero-menu-btn{
+
+    border:2px solid white;
+    color:white;
+    padding:14px 28px;
+    border-radius:50px;
+    font-weight:600;
+
+}
+
+.hero-menu-btn:hover{
+
+    background:white;
+    color:black;
 
 }
