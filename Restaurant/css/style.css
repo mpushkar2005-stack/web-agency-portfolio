@@ -543,3 +543,103 @@ ul{
     line-height:1.7;
 
 }
+
+/* ===========================
+   CHEF SECTION
+=========================== */
+
+.chef{
+
+    padding:120px 0;
+
+    background:white;
+
+}
+
+.chef-container{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:80px;
+
+    align-items:center;
+
+}
+
+.chef-image img{
+
+    width:100%;
+
+    border-radius:25px;
+
+    box-shadow:0 20px 50px rgba(0,0,0,.15);
+
+}
+
+.section-tag{
+
+    color:var(--primary);
+
+    font-weight:600;
+
+    letter-spacing:2px;
+
+    text-transform:uppercase;
+
+}
+
+.chef-content h2{
+
+    font-size:54px;
+
+    margin:15px 0;
+
+    font-family:'Playfair Display', serif;
+
+}
+
+.chef-content h3{
+
+    color:var(--secondary);
+
+    margin-bottom:25px;
+
+}
+
+.chef-content p{
+
+    line-height:1.9;
+
+    color:#64748B;
+
+    margin-bottom:30px;
+
+}
+
+.chef-content ul{
+
+    margin-bottom:40px;
+
+}
+
+.chef-content li{
+
+    margin-bottom:18px;
+
+    font-size:18px;
+
+}
+
+.chef-image img{
+
+    transition:.5s;
+
+}
+
+.chef-image:hover img{
+
+    transform:scale(1.03);
+
+}
