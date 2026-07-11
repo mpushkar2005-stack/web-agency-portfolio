@@ -723,3 +723,83 @@ ul{
     line-height:1.8;
 
 }
+
+/* ===========================
+   GALLERY
+=========================== */
+
+.gallery{
+
+    padding:120px 0;
+
+    background:#ffffff;
+
+}
+
+.gallery-feature{
+
+    margin-bottom:30px;
+
+}
+
+.gallery-feature img{
+
+    width:100%;
+
+    height:520px;
+
+    object-fit:cover;
+
+    border-radius:20px;
+
+    transition:.4s;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.12);
+
+}
+
+.gallery-feature img:hover{
+
+    transform:scale(1.01);
+
+}
+
+.gallery-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:25px;
+
+}
+
+.gallery-grid img{
+
+    width:100%;
+
+    height:260px;
+
+    object-fit:cover;
+
+    border-radius:18px;
+
+    transition:.35s;
+
+    box-shadow:0 12px 30px rgba(0,0,0,.08);
+
+}
+
+.gallery-grid img:hover{
+
+    transform:translateY(-6px);
+
+}
+
+.gallery-btn{
+
+    margin-top:45px;
+
+    text-align:center;
+
+}

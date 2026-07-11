@@ -15,3 +15,25 @@
     }
 
 }
+
+@media(max-width:768px){
+
+    .gallery-feature img{
+
+        height:300px;
+
+    }
+
+    .gallery-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .gallery-grid img{
+
+        height:250px;
+
+    }
+
+}
