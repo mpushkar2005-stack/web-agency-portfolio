@@ -37,3 +37,27 @@
     }
 
 }
+
+@media(max-width:768px){
+
+    .cta{
+
+        background-attachment:scroll;
+
+    }
+
+    .cta h2{
+
+        font-size:38px;
+
+    }
+
+    .cta-info{
+
+        flex-direction:column;
+
+        gap:15px;
+
+    }
+
+}

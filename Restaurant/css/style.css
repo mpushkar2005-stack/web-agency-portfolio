@@ -803,3 +803,82 @@ ul{
     text-align:center;
 
 }
+
+/* ===========================
+   CALL TO ACTION
+=========================== */
+
+.cta{
+
+    padding:140px 0;
+
+    background:
+    linear-gradient(rgba(0,0,0,.65),
+    rgba(0,0,0,.65)),
+    url("../assets/images/cta-bg.jpg");
+
+    background-size:cover;
+
+    background-position:center;
+
+    background-attachment:fixed;
+
+}
+
+.cta-content{
+
+    text-align:center;
+
+    max-width:800px;
+
+    margin:auto;
+
+    color:white;
+
+}
+
+.cta h2{
+
+    font-size:60px;
+
+    margin:20px 0;
+
+    font-family:'Playfair Display', serif;
+
+}
+
+.cta p{
+
+    font-size:20px;
+
+    line-height:1.8;
+
+    margin-bottom:35px;
+
+}
+
+.cta-info{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:40px;
+
+    margin-bottom:40px;
+
+    font-size:18px;
+
+}
+
+.cta .btn-book{
+
+    transition:.35s;
+
+}
+
+.cta .btn-book:hover{
+
+    transform:translateY(-5px) scale(1.05);
+
+}
