@@ -1,0 +1,107 @@
+/* ===================================
+   SAFFRON TABLE DESIGN SYSTEM
+=================================== */
+
+:root{
+
+    /* Primary Colors */
+
+    --primary:#C2410C;
+
+    --primary-light:#EA580C;
+
+    --primary-dark:#9A3412;
+
+    /* Accent */
+
+    --gold:#D4AF37;
+
+    /* Neutral */
+
+    --white:#FFFFFF;
+
+    --cream:#FFF8F2;
+
+    --background:#FAFAFA;
+
+    /* Text */
+
+    --heading:#111827;
+
+    --text:#475569;
+
+    --muted:#94A3B8;
+
+    /* Border */
+
+    --border:#E5E7EB;
+
+}
+
+/* ===================================
+   TYPOGRAPHY
+=================================== */
+
+:root{
+
+    --fs-hero:72px;
+
+    --fs-h1:56px;
+
+    --fs-h2:42px;
+
+    --fs-h3:30px;
+
+    --fs-h4:22px;
+
+    --fs-body:18px;
+
+    --fs-small:15px;
+
+}
+
+:root{
+
+    --space-1:8px;
+
+    --space-2:16px;
+
+    --space-3:24px;
+
+    --space-4:32px;
+
+    --space-5:48px;
+
+    --space-6:64px;
+
+    --space-7:96px;
+
+    --space-8:120px;
+
+}
+
+:root{
+
+    --shadow-sm:
+    0 5px 15px rgba(0,0,0,.08);
+
+    --shadow-md:
+    0 15px 35px rgba(0,0,0,.10);
+
+    --shadow-lg:
+    0 25px 60px rgba(0,0,0,.15);
+
+}
+
+:root{
+
+    --radius-sm:12px;
+
+    --radius-md:18px;
+
+    --radius-lg:26px;
+
+    --radius-xl:40px;
+
+}
+
