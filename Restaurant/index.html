@@ -22,7 +22,7 @@
 
 <body>
 
-    <script src="js/script.js"></script>
+    
 
     <header>
 
@@ -179,90 +179,81 @@
 
         <div class="section-title">
 
-            <h2>Our Signature Dishes</h2>
+            <span class="section-tag">
+                CHEF'S COLLECTION
+            </span>
+
+            <h2>
+                Signature Dishes Crafted <br>
+                For Unforgettable Moments
+            </h2>
 
             <p>
-                Every dish is crafted using fresh ingredients,
-                authentic recipes and a passion for exceptional taste.
+                Every dish is handcrafted with premium ingredients,
+                artistic presentation and unforgettable flavours.
             </p>
 
         </div>
 
-        <div class="dish-grid">
+        <div class="featured-layout">
 
-            <div class="dish-card">
+            <!-- Left Image -->
 
-                <img src="assets/images/pasta.jpg" alt="Creamy Pasta">
+            <div class="featured-image">
 
-                <div class="dish-content">
+                <span class="featured-badge">
+                    ★ Chef's Special
+                </span>
+
+                <img id="featuredDishImage"
+                    src="assets/images/pasta.jpg"
+                    alt="Featured Dish">
+
+            </div>
+
+            <!-- Right Content -->
+
+            <div class="featured-list">
+
+                <div class="dish-info"
+                    data-image="assets/images/pasta.jpg">
 
                     <h3>Creamy Alfredo Pasta</h3>
 
                     <p>
-                        Rich parmesan sauce with fresh herbs and handmade pasta.
+                        Handmade pasta finished with parmesan,
+                        herbs and creamy Italian sauce.
                     </p>
 
-                    <div class="dish-footer">
-
-                        <span class="price">₹399</span>
-
-                        <span class="rating">⭐ 4.9</span>
-
-                    </div>
-
-                    <a href="#" class="btn-order">Order Now</a>
+                    <span class="dish-price">₹399</span>
 
                 </div>
 
-            </div>
-
-            <div class="dish-card">
-
-                <img src="assets/images/steak.jpg" alt="Steak">
-
-                <div class="dish-content">
+                <div class="dish-info"
+                    data-image="assets/images/steak.jpg">
 
                     <h3>Grilled Steak</h3>
 
                     <p>
-                        Premium grilled steak served with roasted vegetables.
+                        Premium grilled steak served with roasted
+                        vegetables and signature sauce.
                     </p>
 
-                    <div class="dish-footer">
-
-                        <span class="price">₹699</span>
-
-                        <span class="rating">⭐ 4.8</span>
-
-                    </div>
-
-                    <a href="#" class="btn-order">Order Now</a>
+                    <span class="dish-price">₹699</span>
 
                 </div>
 
-            </div>
-
-            <div class="dish-card">
-
-                <img src="assets/images/pizza.jpg" alt="Pizza">
-
-                <div class="dish-content">
+                <div class="dish-info"
+                    data-image="assets/images/pizza.jpg">
 
                     <h3>Wood Fired Pizza</h3>
 
                     <p>
-                        Fresh mozzarella, basil and handcrafted pizza dough.
+                        Fresh mozzarella, basil and handcrafted
+                        wood fired dough.
                     </p>
 
-                    <div class="dish-footer">
-
-                        <span class="price">₹349</span>
-
-                        <span class="rating">⭐ 4.7</span>
-
-                    </div>
-
-                    <a href="#" class="btn-order">Order Now</a>
+                    <span class="dish-price">₹349</span>
 
                 </div>
 
@@ -684,6 +675,8 @@
 
 </section>
 
+
+<script src="js/script.js"></script>
 </body>
 
 </html>
