@@ -810,61 +810,206 @@ url("../assets/images/hero.jpg");
 
 
 
-/* ===========================
-   WHY CHOOSE US
-=========================== */
+/*==========================
+WHY CHOOSE US
+==========================*/
 
 .why-us{
 
-    padding:100px 0;
-    background:#FFF8F2;
+    padding:120px 0;
+
+    background:#faf8f4;
 
 }
 
-.features-grid{
+.timeline{
 
-    display:grid;
-    grid-template-columns:repeat(4,1fr);
-    gap:30px;
+    max-width:850px;
+
+    margin:80px auto 0;
+
+    position:relative;
 
 }
 
-.feature-card{
+.timeline::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:20px;
+    top:0;
+
+    width:2px;
+    height:100%;
+
+    background:#d6b37a;
+
+    transform:scaleY(0);
+    transform-origin:top;
+
+    transition:transform 1.5s ease;
+
+}
+
+.timeline.animate::before{
+
+    transform:scaleY(1);
+
+}
+
+.timeline-item{
+
+    position:relative;
+
+    padding-left:80px;
+
+    margin-bottom:60px;
+
+    width:100%;
+
+}
+
+.timeline-item:nth-child(even){
+
+    padding-left:140px;
+
+}
+
+.timeline-dot{
+
+    width:20px;
+    height:20px;
+
+    background:#c88632;
+
+    border:4px solid white;
+
+    border-radius:50%;
+
+    position:absolute;
+
+    left:11px;
+    top:10px;
+
+    transition:all .35s ease;
+    opacity:0;
+    transform:scale(.4);
+
+}
+
+.timeline-dot.show{
+
+    opacity:1;
+
+    transform:scale(1);
+
+    transition:
+        transform .45s ease,
+        opacity .45s ease;
+
+}
+
+.timeline-item:hover .timeline-dot{
+
+    transform:scale(1.45);
+
+    background:#d4a04d;
+
+    box-shadow:
+        0 0 0 10px rgba(212,160,77,.18),
+        0 0 20px rgba(212,160,77,.45),
+        0 0 40px rgba(212,160,77,.35),
+        0 0 60px rgba(212,160,77,.25);
+
+}
+
+.timeline-content{
 
     background:white;
     padding:35px;
-    border-radius:18px;
-    text-align:center;
-    box-shadow:0 12px 35px rgba(0,0,0,.08);
-    transition:.35s;
+    border-radius:20px;
+    box-shadow:0 20px 50px rgba(0,0,0,.06);
+
+    opacity:0;
+    transform:translateY(40px);
+
+    transition:all .7s ease;
 
 }
 
-.feature-card:hover{
+.timeline-content.show{
 
-    transform:translateY(-8px);
+    opacity:1;
 
-}
-
-.icon{
-
-    font-size:48px;
-    margin-bottom:20px;
+    transform:translateY(0);
 
 }
 
-.feature-card h3{
+.timeline-content:hover{
+
+    transform:translateX(10px) translateY(-4px);
+
+    box-shadow:0 30px 70px rgba(0,0,0,.10);
+
+}
+
+.timeline-content:hover i{
+
+    transform:rotate(-10deg) scale(1.15);
+
+    color:#d89a3c;
+
+}
+
+.timeline-content h3{
+
+    font-size:28px;
 
     margin-bottom:15px;
 
-}
-
-.feature-card p{
-
-    color:#64748B;
-    line-height:1.7;
+    color:#222;
 
 }
+
+.timeline-content p{
+
+    color:#666;
+
+    line-height:1.8;
+
+}
+
+
+.timeline-heading{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:18px;
+
+    margin-bottom:18px;
+
+}
+
+.timeline-heading i{
+
+    font-size:24px;
+
+    color:#c88632;
+
+    transition:.35s ease;
+
+}
+
+.timeline-heading h3{
+
+    margin:0;
+
+}
+
 
 /* ===========================
    CHEF SECTION

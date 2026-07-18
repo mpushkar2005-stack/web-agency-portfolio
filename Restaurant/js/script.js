@@ -78,3 +78,41 @@ document.querySelector(".featured-list").addEventListener("mouseleave", () => {
 });
 
 dishes[0].classList.add("active");
+
+
+// ============================
+// Timeline Scroll Animation
+// ============================
+
+const timelineCards = document.querySelectorAll(".timeline-content");
+
+const timelineObserver = new IntersectionObserver((entries) => {
+
+    entries.forEach((entry) => {
+
+        if(entry.isIntersecting){
+
+            entry.target.classList.add("show");
+
+            timeline.classList.add("animate");
+
+            const dot = entry.target.parentElement.querySelector(".timeline-dot");
+
+            dot.classList.add("show");
+
+        }
+
+    });
+
+},{
+    threshold:0.2
+});
+
+timelineCards.forEach((card)=>{
+
+    timelineObserver.observe(card);
+
+});
+
+
+const timeline = document.querySelector(".timeline");
